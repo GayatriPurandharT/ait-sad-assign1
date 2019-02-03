@@ -80,4 +80,5 @@ test:
 #
 production:
   <<: *default
-  url: <%= "postgres://postgres:#{ENV['DATABASE_PASSWORD']}@#{ENV['DATABASE_URL']}:#{ENV['DATABASE_PORT']}/ait-sad-assign1" %>
+  database: ait-sad-assign1_production
+  # url: <%= "postgres://postgres:#{ENV['DATABASE_PASSWORD']}@#{ENV['DATABASE_URL']}:#{ENV['DATABASE_PORT']}/ait-sad-assign1" %>
